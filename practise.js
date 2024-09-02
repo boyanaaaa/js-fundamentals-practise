@@ -48,3 +48,53 @@ let arr = ["GFG_1", "GeeksForGeeks",
     console.log("random element selected:", randomElement);
     console.log("original array:", array);
     */
+
+
+
+    // IF practise
+    /*
+    function checkAge(age) {
+        return (age > 18) ? console.log("Allowed") : 
+        console.log('Did parents allow you?');
+      }
+
+   checkAge(5);
+   checkAge(20);
+   checkAge(0);
+   checkAge();
+   */
+
+
+   //Function min(a, b)
+   /*
+   function min(a,b){
+    return ( a < b) ? console.log(a) : console.log(b);
+   }
+
+min(2, 5)
+min(3, -1)
+min(1, 1)
+*/
+
+//Write a function pow(x,n) that returns x in power n. Or, in other words, multiplies x by itself n times and returns the result.
+/*
+function pow(x,n){
+    let result = x;
+
+    for ( let i = 1; i < n; i++){
+        result *= x;
+    }
+    return result;
+}
+
+let x = prompt("x?", '');
+let n = prompt("n?", '');
+
+if ( n < 1) {
+    alert(`Power ${n} is not supported, use a positive integer.`);
+} else {
+    alert(pow(x,n));
+}
+*/
+
+
