@@ -144,3 +144,47 @@ const people = ['Chris', 'Anne', 'Colin', 'Terri',
     }
 */
 
+
+
+/*
+let i = 0;
+while ( i < 3) {
+    alert( i );
+    i ++;
+}
+*/
+
+/*
+let i = 5;
+while (i) alert(i--);
+*/
+
+/*
+let i = 0;
+do {
+    alert(i);
+    i++;
+} while ( i < 3);
+*/
+
+
+
+/* Objects Basics */
+
+function sumOfTrippledEvens(array){
+    let sum = 0;
+    for(let i = 0; i < array.length; i++){
+        if (array[i] % 2 === 0 ) {
+            const trippledEven = array[i] * 3;
+            sum += trippledEven;
+
+        }
+    }
+    return sum;
+}
+
+
+
+sumOfTrippledEvens([1,2,3,4]);
+
+
