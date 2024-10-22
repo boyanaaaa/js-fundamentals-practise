@@ -170,7 +170,7 @@ do {
 
 
 /* Objects Basics */
-
+/*
 function sumOfTrippledEvens(array){
     let sum = 0;
     for(let i = 0; i < array.length; i++){
@@ -183,8 +183,34 @@ function sumOfTrippledEvens(array){
     return sum;
 }
 
-
-
 sumOfTrippledEvens([1,2,3,4]);
+*/
 
+
+/* Map method */
+/*
+function addOne(num) {
+    return num + 1;
+  }
+  const arrayNum = [18, 2, 3, 4, 5];
+  const mappedArr = arrayNum.map(addOne);
+  console.log(mappedArr); 
+  */
+
+  /*
+  const arr = [1,3,5,7];
+  const mapArr = arr.map((num) => num + 1);
+  console.log(mapArr);
+  */
+
+  /* Filter method */
+/*
+function isOdd(num) {
+    return num % 2 !== 0;
+}
+const arr = [1,2,3,4,5];
+const oddNums = arr.filter(isOdd);
+console.log(oddNums);
+console.log(arr);
+*/
 
