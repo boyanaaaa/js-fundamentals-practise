@@ -214,3 +214,50 @@ console.log(oddNums);
 console.log(arr);
 */
 
+
+/* Reduce method */
+/*
+const arr = [1,2,3,4,5];
+const productOfAllNums = arr.reduce((total, currentItem) => {
+    return total * currentItem;
+}, 1);
+console.log(productOfAllNums);
+console.log(arr);
+*/
+
+/* Rewrite the sumOfTripledEvens(array) function using these three methods. */
+/*
+function sumOfTripledEvens(array) {
+    return array
+      .filter((num) => num % 2 === 0)
+      .map((num) => num * 3)
+      .reduce((acc, curr) => acc + curr);
+  }
+
+const arr = [1,2,3,4,5];
+sumOfTripledEvens(arr);
+console.log(sumOfTripledEvens);
+*/
+
+
+
+/* Write the function camelize(str) 
+that changes dash-separated words like 
+“my-short-string” into camel-cased “myShortString”. */
+
+/*
+function camelize(string){
+    return string.split('-')
+    .map(
+        // capitalizes first letters of all array items except the first one
+        // converts ['my', 'long', 'word'] into ['my', 'Long', 'Word']
+        (word, index) => index == 0 ? word : word[0].toUpperCase() + word.slice(1)
+      )
+    .join('');
+}
+
+
+console.log(camelize("background-color"))
+console.log(camelize("list-style-image"))
+console.log(camelize("-webkit-transition"))
+*/
