@@ -261,3 +261,67 @@ console.log(camelize("background-color"))
 console.log(camelize("list-style-image"))
 console.log(camelize("-webkit-transition"))
 */
+
+
+
+
+/* Filter range */
+/*
+let arr = [5, 3, 8, 1];
+function filterRange(arr, a, b){
+    return filtered = arr.filter((num) => num >= a && num <= b);
+}
+
+console.log(filterRange(arr,1, 4));
+console.log(arr);
+*/
+
+
+
+/* Filter range "in place" */
+/*
+let arr = [5, 3, 8, 1];
+function filterRangeInPlace(arr, a, b){
+    for ( let i = 0; i < arr.length; i ++){
+        let value = arr[i];
+        if ( value < a || value > b){
+            arr.splice(i,1);
+            i--;
+        }
+
+    }
+    return arr;
+}
+
+console.log(filterRangeInPlace(arr,1,4));
+*/
+
+
+
+/* Sort in decreasing order */
+/*
+let arr = [5, 2, 1, -10, 8];
+function sortInDecreasingOrder(arr){
+    return arr.sort((a,b) => b - a );
+}
+
+sortInDecreasingOrder(arr);
+console.log(arr);
+*/
+
+
+
+
+/* Copy and sort array */
+/*
+function copySorted(arr) {
+    return arr.slice().sort();
+  }
+  
+  let arr = ["HTML", "JavaScript", "CSS"];
+  
+  let sorted = copySorted(arr);
+  
+  console.log( sorted );
+  console.log( arr );
+  */
