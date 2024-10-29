@@ -325,3 +325,148 @@ function copySorted(arr) {
   console.log( sorted );
   console.log( arr );
   */
+
+
+  /* Map to names */
+  /*
+  let john = { name: "John", age: 25 };
+  let pete = { name: "Pete", age: 30 };
+  let mary = { name: "Mary", age: 28 };
+  
+  let users = [ john, pete, mary ];
+
+  let names = users.map(user => user.name);
+  let ages = users.map(user => user.age);
+
+  console.log(names);
+  console.log(ages);
+  */
+
+
+
+
+
+
+/*You have an array of user objects, each one has name, surname and id.
+Write the code to create another array from it, of objects with id and fullName, 
+where fullName is generated from name and surname. */
+
+/*
+let john = { name: "John", surname: "Smith", id: 1 };
+let pete = { name: "Pete", surname: "Hunt", id: 2 };
+let mary = { name: "Mary", surname: "Key", id: 3 };
+
+let users = [ john, pete, mary ];
+
+let userMapped = users.map(user => ({
+    fullName: `${user.name} ${user.surname}`,
+    id: user.id
+}))
+
+console.log(userMapped);
+*/
+
+
+
+
+/* Sort users by age */
+/*
+
+let john = { name: "John", age: 25 };
+let pete = { name: "Pete", age: 30 };
+let mary = { name: "Mary", age: 28 };
+
+let arr = [ pete, john, mary ];
+
+function sortByAge(arr){
+    arr.sort((a,b) => a.age - b.age);
+    console.log(arr);
+}
+
+sortByAge(arr);
+*/
+
+
+
+
+/* Shuffle an array */
+/*
+let arr = [1, 2, 3, 4, 5];
+function shuffle(array){
+    array.sort(() => Math.random() - 0.5);
+    console.log(array);
+}
+shuffle(arr);
+shuffle(arr);
+shuffle(arr);
+*/
+
+
+
+/* Get average age */
+/*
+let john = { name: "John", age: 25 };
+let pete = { name: "Pete", age: 30 };
+let mary = { name: "Mary", age: 29 };
+
+let arr = [ john, pete, mary ];
+
+function getAverageAge(users){
+    return users.reduce((prev, user) => prev + user.age, 0) / users.length;
+
+
+}
+console.log(getAverageAge(arr));
+*/
+
+
+/* Filter unique array members 
+Create a function unique(arr) that should
+return an array with unique items of arr.
+*/
+/*
+function unique(arr) {
+    let result = [];
+
+    for( let str of arr){
+        if (!result.includes(str)){
+            result.push(str);
+        }
+    }
+    return result;
+  }
+  
+  let strings = ["Hare", "Krishna", "Hare", "Krishna",
+    "Krishna", "Krishna", "Hare", "Hare", ":-O"
+  ];
+
+
+  console.log(unique(strings));
+  */
+
+
+
+
+
+  /* Create keyed object from array 
+  Create a function groupById(arr) that creates an object from it,
+  with id as the key, and array items as values.
+  */
+/*
+  let users = [
+    {id: 'john', name: "John Smith", age: 20},
+    {id: 'ann', name: "Ann Smith", age: 24},
+    {id: 'pete', name: "Pete Peterson", age: 31},
+  ];
+  
+
+  function groupById(array){
+  return array.reduce((obj, value) => {
+    obj[value.id] = value;
+    return obj;
+  }, {} )
+}
+
+let usersById = groupById(users);
+console.log(usersById);
+*/
