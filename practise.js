@@ -475,9 +475,10 @@ console.log(usersById);
 
 
 /* Exercise 09 - Palindromes */
-
+/*
 function palindromes(string) {
     const alphanumerical = 'abcdefghijklmnopqrstuvwxyz0123456789';
+
     const newString = string
     .toLowerCase()
     .split('')
@@ -492,3 +493,36 @@ function palindromes(string) {
 
 
 console.log(palindromes('bobob'));
+*/
+
+
+
+/* Exercise 10 - Fibonacci 
+The first few Fibonacci Number are 0, 1, 1, 2, 3, 5, 8.....
+0th Fibonacci number is consider as 0. 
+*/
+/*
+function fibonacci(number){
+   let num1 = 0;
+   let num2 = 1;
+   let sum;
+   if ( number === 1){
+    return num1;
+   } else if ( number === 2){
+    return num2;
+   } else {
+    for(let i = 3; i <= number; i++){
+        sum = num1 + num2;  
+        num1 = num2; 
+        num2 = sum; 
+    }
+    return num2;
+   }
+
+}
+
+console.log("Fibonacci(5): " + fibonacci(5));
+console.log("Fibonacci(8): " + fibonacci(8));
+*/
+
+
