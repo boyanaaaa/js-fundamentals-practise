@@ -470,3 +470,25 @@ function unique(arr) {
 let usersById = groupById(users);
 console.log(usersById);
 */
+
+
+
+
+/* Exercise 09 - Palindromes */
+
+function palindromes(string) {
+    const alphanumerical = 'abcdefghijklmnopqrstuvwxyz0123456789';
+    const newString = string
+    .toLowerCase()
+    .split('')
+    .filter((char) => alphanumerical.includes(char))
+    .join('');
+
+    const reversedString = newString.split('').reverse().join('');
+
+    return reversedString === newString;
+
+};
+
+
+console.log(palindromes('bobob'));
