@@ -526,3 +526,25 @@ console.log("Fibonacci(8): " + fibonacci(8));
 */
 
 
+/* Exercise 11 - Get the Titles!
+Write a function that takes the array 
+and returns an array of titles: ['Book','Book2'] */
+
+
+const books = [
+    {
+      title: 'Book',
+      author: 'Name'
+    },
+    {
+      title: 'Book2',
+      author: 'Name2'
+    }
+  ]
+
+
+  function returnBooks(array){
+    return array.map((book) => book.title);
+  }
+
+  console.log(returnBooks(books));
