@@ -530,7 +530,7 @@ console.log("Fibonacci(8): " + fibonacci(8));
 Write a function that takes the array 
 and returns an array of titles: ['Book','Book2'] */
 
-
+/*
 const books = [
     {
       title: 'Book',
@@ -548,3 +548,62 @@ const books = [
   }
 
   console.log(returnBooks(books));
+  */
+
+
+
+
+  /* Exercise 12 - Find the Oldest 
+  Given an array of objects representing people 
+  with a birth and death year, return the oldest person. */
+
+  /*
+  const people = [
+    {
+      name: "Carly",
+      yearOfBirth: 1942,
+      yearOfDeath: 1970,
+    },
+    {
+      name: "Ray",
+      yearOfBirth: 1962,
+      yearOfDeath: 2011,
+    },
+    {
+      name: "Jane",
+      yearOfBirth: 1912,
+      yearOfDeath: 1941,
+    },
+  ]
+
+    function getAge (birth, death){
+    if (!death) {
+        death = new Date().getFullYear();
+    }
+    return death - birth;
+  }
+*/
+
+  //if (!death) checks if the death parameter is undefined, 
+  //null, or 0. If any of these is the case, 
+  //it means that yearOfDeath wasn't specified, 
+  //indicating the person is still living.
+
+  // When the person is alive, the function calculates 
+  // their age by treating death as the current year, 
+  // retrieved with new Date().getFullYear().
+
+/*
+    function findTheOldest (people){
+    return people.reduce((oldest, currentPerson) => {
+        const oldestAge = getAge(oldest.yearOfBirth, oldest.yearOfDeath);
+        const currentAge = getAge(currentPerson.yearOfBirth, currentPerson.yearOfDeath);
+
+        return oldestAge < currentAge ? currentPerson : oldest;
+    })
+  }
+
+
+  console.log(findTheOldest(people));
+*/
+
